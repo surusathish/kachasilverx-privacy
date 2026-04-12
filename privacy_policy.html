@@ -22,7 +22,8 @@
         <li><strong>Name</strong> – used to identify you on the platform</li>
         <li><strong>Phone number</strong> – used for OTP login and shared with the other party only when a deal is confirmed</li>
         <li><strong>Email address</strong> – used for account linking via Google Sign-In</li>
-        <li><strong>Aadhaar number</strong> – collected for identity verification only; stored in masked format (XXXX-XXXX-XXXX); the full number is never stored or shared</li>
+        <li><strong>Aadhaar number</strong> – collected for identity verification only; only the last 4 digits are retained in masked format (XXXXXXXX-XXXX); the full number is never stored or shared</li>
+        <li><strong>Location (city)</strong> – collected to display on your listings and help nearby buyers find you</li>
         <li><strong>Device token</strong> – used to send push notifications about your listings and deals</li>
     </ul>
 
@@ -43,7 +44,7 @@
     </ul>
 
     <h2>4. Data Security</h2>
-    <p>All data is stored securely on AWS RDS (PostgreSQL). Aadhaar numbers are masked before storage. Communication between the app and our servers is encrypted via HTTPS.</p>
+    <p>All data is stored securely on AWS RDS (PostgreSQL). Aadhaar numbers are masked before storage (only last 4 digits retained). Communication between the app and our servers is secured. We are actively working towards full HTTPS encryption.</p>
 
     <h2>5. Account Deletion</h2>
     <p>You can delete your account at any time from within the app: <strong>Profile → Delete Account</strong>.</p>
@@ -55,10 +56,30 @@
     <h2>6. Children's Privacy</h2>
     <p>KachaSilverX is not intended for users under the age of 18. We do not knowingly collect data from minors.</p>
 
-    <h2>7. Changes to This Policy</h2>
+    <h2>7. Data Retention</h2>
+    <ul>
+        <li>Sold listings are archived after 90 days and permanently purged after 365 days.</li>
+        <li>Active listings with no buyer interest are automatically expired after 180 days.</li>
+        <li>Completed deal records (connections) are archived after 180 days once both parties have reviewed.</li>
+        <li>Archived data is permanently deleted after 365 days.</li>
+    </ul>
+
+    <h2>8. Your Rights (DPDP Act 2023)</h2>
+    <p>Under the Digital Personal Data Protection Act, 2023, you have the right to:</p>
+    <ul>
+        <li><strong>Access</strong> – Request a copy of the personal data we hold about you</li>
+        <li><strong>Correction</strong> – Request correction of inaccurate data (name, location, email can be edited in-app)</li>
+        <li><strong>Erasure</strong> – Delete your account and all associated data via Profile &rarr; Delete Account</li>
+        <li><strong>Grievance redressal</strong> – Contact us at kachasilverx@gmail.com for any data-related concerns</li>
+    </ul>
+
+    <h2>9. Google Play Services &amp; Firebase</h2>
+    <p>KachaSilverX uses Firebase (a Google service) for authentication, push notifications, and analytics. Firebase may collect device identifiers, IP addresses, and app usage data in accordance with <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+    <h2>10. Changes to This Policy</h2>
     <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
 
-    <h2>8. Contact Us</h2>
+    <h2>11. Contact Us</h2>
     <p>For any privacy-related questions or requests, contact us at:</p>
     <p><strong>Email:</strong> kachasilverx@gmail.com</p>
     <p><strong>Location:</strong> Salem, Tamil Nadu, India</p>
