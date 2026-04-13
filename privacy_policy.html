@@ -22,7 +22,7 @@
         <li><strong>Name</strong> – used to identify you on the platform</li>
         <li><strong>Phone number</strong> – used for OTP login and shared with the other party only when a deal is confirmed</li>
         <li><strong>Email address</strong> – used for account linking via Google Sign-In</li>
-        <li><strong>Aadhaar number</strong> – collected for identity verification only; only the last 4 digits are retained in masked format (XXXXXXXX-XXXX); the full number is never stored or shared</li>
+        <li><strong>Aadhaar number</strong> – collected for identity verification only; stored in encrypted format using AES encryption and never shared with other users. Only the last 4 digits are displayed in the app for your reference</li>
         <li><strong>Location (city)</strong> – collected to display on your listings and help nearby buyers find you</li>
         <li><strong>Device token</strong> – used to send push notifications about your listings and deals</li>
     </ul>
@@ -44,7 +44,7 @@
     </ul>
 
     <h2>4. Data Security</h2>
-    <p>All data is stored securely on AWS RDS (PostgreSQL). Aadhaar numbers are masked before storage (only last 4 digits retained). Communication between the app and our servers is secured. We are actively working towards full HTTPS encryption.</p>
+    <p>All data is stored securely on AWS RDS (PostgreSQL). Aadhaar numbers are encrypted using AES encryption before storage; the full number is only accessible to authorised administrators when required by law. Communication between the app and our servers is secured. We are actively working towards full HTTPS encryption.</p>
 
     <h2>5. Account Deletion</h2>
     <p>You can delete your account at any time from within the app: <strong>Profile → Delete Account</strong>.</p>
